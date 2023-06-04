@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: trasnparent;" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.login.Login">
+   <children>
+      <Pane layoutX="283.0" layoutY="14.0" prefHeight="356.0" prefWidth="303.0">
+         <children>
+            <Label layoutX="37.0" layoutY="14.0" prefHeight="35.0" prefWidth="229.0" text="Bienvenid@ a *****">
+               <font>
+                  <Font name="System Italic" size="24.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="165.0" prefHeight="27.0" prefWidth="100.0" text="Usuario:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <TextField fx:id="username" layoutX="37.0" layoutY="192.0" prefHeight="27.0" prefWidth="229.0" promptText="Usuario" />
+            <Label layoutX="37.0" layoutY="219.0" prefHeight="23.0" prefWidth="100.0" text="Contraseña:">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <PasswordField fx:id="password" layoutX="37.0" layoutY="246.0" prefHeight="27.0" prefWidth="229.0" promptText="Contraseña" />
+            <Label fx:id="wrong" contentDisplay="CENTER" layoutX="43.0" layoutY="273.0" prefHeight="27.0" prefWidth="188.0" text="Usuario y/o contraseña erronea." textAlignment="JUSTIFY" textFill="#b90909" visible="false">
+               <font>
+                  <Font size="11.0" />
+               </font>
+            </Label>
+            <Button fx:id="login" layoutX="37.0" layoutY="314.0" mnemonicParsing="false" onAction="#loginHandler" prefHeight="27.0" prefWidth="100.0" text="Iniciar Sesion" />
+            <Button fx:id="signup" layoutX="166.0" layoutY="314.0" mnemonicParsing="false" onAction="#createAccount" prefHeight="27.0" prefWidth="100.0" text="Crear Cuenta" />
+            <AnchorPane layoutX="-253.0" layoutY="-4.0" prefHeight="378.0" prefWidth="270.0" />
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>
